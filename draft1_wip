@@ -1,0 +1,14 @@
+let inventory = []
+
+function findProductIndex(productName) {
+  let productIndex = -1
+    for (let i = 0; i < inventory.length; i++) {
+      let lowerCaseName = inventory[i]['name'].toLowerCase()
+      if (lowerCaseName == productName.toLowerCase()) {
+        productIndex = i
+      }
+    }
+  return productIndex
+}
+
+function addProduct(newProduct) {}
